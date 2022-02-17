@@ -1,14 +1,15 @@
-import { ReactElement } from "react";
+import { ProductCardProps } from "../components/ProductCard";
+import { PropsButtons } from "../components/ProductButtons";
+import { PropsImage } from '../components/ProductImage'
+import { PropsTitle } from "../components/ProductTitle";
 
-export interface ProductCardProps {
-    children?: ReactElement | ReactElement[];
-    product: Product
-}
+
+
 
 export interface Product {
     id: string;
-    title: string;
     img?: string;
+    title: string;
 };
 
 export interface ProductContextProps {
@@ -19,7 +20,7 @@ export interface ProductContextProps {
 
 export interface ProductCardHOCProps {
     ({ children, product }: ProductCardProps): JSX.Element 
-    Title: ({ title }: {title?: string}) => JSX.Element
-    Image: ({ img }: {img?: string }) => JSX.Element;
-    Buttons: ()=> JSX.Element;
+    Buttons: ( Props: PropsButtons ) => JSX.Element;
+    Image: ( Props: PropsImage ) => JSX.Element;
+    Title: ( Props: PropsTitle ) => JSX.Element
 }
