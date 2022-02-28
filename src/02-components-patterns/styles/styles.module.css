@@ -35,7 +35,7 @@
 }
 
 .buttonMinus:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .countLabel {
@@ -58,5 +58,11 @@
 }
 
 .buttonAdd:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.disable{
+    border-color: grey !important;
+    border-left: 1px solid white !important;
+    color: grey !important;
 }

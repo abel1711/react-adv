@@ -10,4 +10,9 @@ const product2 = {
     img:'./coffee-mug2.png',
     title: 'Coffee Mug - Meme'
 };
+// const product3 = {
+//     id: '3',
+//     img:'./coffee-mug2.png',
+//     title: 'Coffee Mug - Meme'
+// };
 export const products: Product[] = [ product1, product2 ];
