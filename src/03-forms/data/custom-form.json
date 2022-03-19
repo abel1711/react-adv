@@ -1,0 +1,85 @@
+[
+    {
+        "type": "text",
+        "name": "firstName",
+        "placeholder": "Your first name",
+        "label": "First name",
+        "value":"",
+        "validations":[
+            {
+                "type": "required"
+            },
+            {
+                "type": "max",
+                "cant": 15
+            },
+            {
+                "type": "min",
+                "cant": 2
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "name": "lastName",
+        "placeholder": "Your last name",
+        "label": "Last name",
+        "value":"",
+        "validations":[
+            {
+                "type": "required"
+            },
+            {
+                "type": "max",
+                "cant": 15
+            },
+            {
+                "type": "min",
+                "cant": 2
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Your email",
+        "label": "Email",
+        "value":"",
+        "validations":[
+            {
+                "type":"required"
+            },{
+                "type":"email"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value":"",
+        "validations":[
+            {
+                "type": "required"
+            }
+        ],
+        "options": [
+            {
+                "id": 1,
+                "label": "Mortal Kombat 3 ultimate"
+            },
+            {
+                "id": 2,
+                "label": "Sonic"
+            },
+            {
+                "id": 3,
+                "label": "Gran thef auto 5"
+            },
+            {
+                "id": 4,
+                "label": "Prototype"
+            }
+        ]
+    }
+]
